@@ -6,7 +6,7 @@ shp2stl.shp2stl(file,
         width: 1000, //in STL arbitrary units, but typically 3D printers use mm
         height: 1000,
         extraBaseHeight: 0,
-        extrudeBy: "POPDEN2012,C,6",
+        extrudeBy: "POPDEN2012",
         simplification: .8,
         binary: true,
         cutoutHoles: false,
@@ -14,6 +14,6 @@ shp2stl.shp2stl(file,
         extrusionMode: 'straight'
     },
     function(err, stl) {
-        fs.writeFileSync('popdenrutgers.stl',  stl);
+        fs.writeFileSync('popdenrutgers1.stl',  stl);
     }
 );
