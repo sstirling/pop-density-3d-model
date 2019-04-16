@@ -4,7 +4,7 @@ var file = 'popden2017.shp';
 shp2stl.shp2stl(file, 
     {
         width: 750, //in STL arbitrary units, but typically 3D printers use mm
-        height: 100,
+        height: 350,
         extraBaseHeight: 0,
         extrudeBy: "POPDEN2012",
         simplification: .8,
